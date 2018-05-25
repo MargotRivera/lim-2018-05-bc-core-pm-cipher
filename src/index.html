@@ -2,11 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Mensaje</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+    <h1>WELCOME TO PARTY</h1>
+      <input type="password" placeholder="Ingrese Contraseña" id="password"></br></br>
+      <button style="cursor:pointer" id="enter">Entrar</button>
+    </div>
+    <div id="container">
+    <h2>CIFRA Y DESCIFRAR TU MENSAJE</h2>
+    <p class="title">Escribe tu mensaje</p>
+      <textarea type="text" placeholder="Mensaje" id='text1'></textarea></br></br>
+    <input type="text" placeholder="Ingrese Llave" id="key">
+        <button style="cursor:pointer" id="cipher">Cifrar</button>
+        <button style="cursor:pointer" id="decipher">Decifrar</button>
+        <button style="cursor:pointer" id="reset">Resetear</button></br></br>
+      <textarea type="text" placeholder="Resultado" id='text2'></textarea>
+    </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
