@@ -6,22 +6,24 @@
     <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap:600" rel="stylesheet">
   </head>
   <body>
     <div id="root">
-    <h1>WELCOME TO PARTY</h1>
-      <input type="password" placeholder="Ingrese Contraseña" id="password"></br></br>
-      <button style="cursor:pointer" id="enter">Entrar</button>
+    <h1>WELCOME TO CIPHER</h1>
+      <h3>Ingresa la Clave Secreta</h3>
+      <input type="password" placeholder="Contraseña" id="password" class="password"><br><br>
+      <input type="button" style="cursor:pointer" value="Entrar" id="enter" class="enter">
     </div>
     <div id="container">
     <h2>CIFRA Y DESCIFRAR TU MENSAJE</h2>
     <p class="title">Escribe tu mensaje</p>
-      <textarea type="text" placeholder="Mensaje" id='text1'></textarea></br></br>
-    <input type="text" placeholder="Ingrese Llave" id="key">
-        <button style="cursor:pointer" id="cipher">Cifrar</button>
-        <button style="cursor:pointer" id="decipher">Decifrar</button>
-        <button style="cursor:pointer" id="reset">Resetear</button></br></br>
-      <textarea type="text" placeholder="Resultado" id='text2'></textarea>
+      <textarea placeholder="Tu Mensaje aquí" id="text1" class="text1"></textarea><br><br>
+        <input type="text" placeholder="Llave" id="key" class= "key" maxlength="2">
+        <input type="button"  id="cipher" value="Cifrar" class="button">
+        <input type="button"  id="decipher" value="Descifrar" class="button">
+        <input type="button"  id="myreset" value="Resetear" class="button"><br><br>
+      <textarea placeholder="Resultado" id="text2" class="text2"></textarea>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

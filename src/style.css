@@ -1,72 +1,252 @@
 body{
-	background-image:url("img/party.jpg");
-	background-size: 100%;
+	background-image:url("img/fondo.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
 	text-align: center;
-}
+	background-repeat: no-repeat;
+	}
 
 h1{
 	font-family: 'Oleo Script', cursive;
 	color: #ffffff;
-	font-size: 55px;
-	margin-top: 55px;
-}
+	font-size: 60px;
+	}
+h3{
+	font-family: 'Oleo Script', cursive;
+	color: #ffffff;
+	font-size: 35px;
+	margin-top: 100px;
+	margin-bottom: 10px;
+	}
 
 h2{
 	font-family: 'Oleo Script', cursive;
 	color: #ffffff;
-	font-size: 50px;
-	margin-bottom: 10px;
-}
+	font-size: 45px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	}
 
 .title{
-	font-size: 22px;
+	font-size: 25px;
 	font-family: 'Paytone One';
 	color: #ffffff;
 	bottom: 50px;
-}
+	}
 
-textarea {
+.text1 {
+    resize: none;
+	border-radius: 5px;
+	font-family: sans-serif;
+	font-size: 15px;
+	width: 450px;
+	height: 180px;
+	}
+
+.text2 {
     resize: none;
     border-radius: 5px;
 	font-family: sans-serif;
 	font-size: 15px;
-	width: 400px;
+	width: 450px;
 	height: 180px;
-}
+	}
 
-#password{
+.password{
 	font-size: 15px;
-	margin-top: 130px;
-	width: 200px;
-	height: 30px;
+	margin-top: 12px;
+	width: 240px;
+	height: 45px;
 	border-radius: 9px;
-}
+	}
 
 #container{
 	display: none;
-}
+	}
 
-#key{
+.key{
+	resize: none;
+	font-family: sans-serif;
 	border-radius: 5px;
-	width: 90px;
-	height: 27px;
-	text-align: center;
-}
+	width: 100px;
+	height: 30px;
+	}
 
-
-button{
-	font-family: Verdana;
-	font-size: 14px;
-	background-color: #6b00b3;
+.enter{
+	font-family: 'Asap', sans-serif;
+	font-size: 20px;
+	background-color: #045FB4;
 	color: #ffffff;
-	width: 95px;
-	height: 35px;
-	border: 2px solid #ffffff;
+	width: 120px;
+	height: 45px;
+	border: 2px solid #045FB4;
 	border-radius: 5px;
-	font-weight: bolder;
 }
 
-button:hover{
-	background-color: #330066;
-	transition: background-color 0.5s;
+.enter:hover {
+	border: 2px solid #002699;
+	background:  #002699;
 }
+
+.button{
+	font-family: 'Asap', sans-serif;
+	font-size: 19px;
+	background-color: #045FB4;
+	color: #ffffff;
+	width: 100px;
+	height: 42px;
+	border: 2px solid  #045FB4;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+.button:hover {
+	border: 2px solid #002699;
+	background:  #002699;
+}
+
+/* Media Queries Responsive*/
+@media screen and (max-width: 64em){
+	h1{
+	font-size: 50px;
+}
+	h3{
+	margin-top: 120px;
+	font-size: 30px;
+}
+	.password{
+	font-size: 14px;
+	width: 210px;
+	height: 40px;
+}
+	.enter{
+	font-size: 19px;
+	width: 120px;
+	height: 40px;
+}
+	h2{
+	font-size: 40px;
+}
+	.text1{
+	width: 400px;
+	height: 180px;
+}
+	.text2{
+	width: 400px;
+	height: 180px;
+}
+	.key{
+	width: 80px;
+	height: 25px;
+}
+	.button{
+	font-size: 17px;
+	width: 90px;
+	height: 35px;
+}
+}
+
+@media screen and (max-width: 48em) {
+	h1{
+		font-size: 45px;
+	}  
+	h2{
+		font-size: 35px;
+	}
+	.title{
+		font-size: 20px;
+	}
+	.key{
+		width: 80px;
+    	height: 25px;
+	}
+	.button{
+		font-size: 17px;
+		width: 90px;
+    	height: 35px;
+	}
+}
+
+@media screen and (max-width: 37.5em){
+	h1{
+		font-size: 45px;
+	}
+	h2{
+		font-size: 30px;
+	}
+	.title{
+		font-size: 20px;
+	}
+	.key{
+		width: 70px;
+    	height: 25px;
+	}
+	.button{
+		font-size: 15px;
+		width: 80px;
+    	height: 35px;
+	}
+	.text1{
+		width: 350px;
+		height: 180px;
+	}
+	.text2{
+		width: 350px;
+		height: 180px;
+	}
+}
+
+@media screen and (max-width: 30em){
+	h1{
+		font-size: 35px;
+	}
+	h2{
+		font-size: 25px;
+	}
+	h3{
+		font-size: 27px;
+		}	
+	.text1{
+		width: 350px;
+		height: 170px;
+	}
+	.text2{
+		width: 350px;
+		height: 170px;
+	}
+}
+
+@media screen and (max-width: 25em) {
+	h1{
+		font-size: 30px;
+	}
+	h3{
+		font-size: 25px;
+	}	
+	.title{
+		font-size: 20px;
+	}
+	.key{
+		width: 60px;
+    	height: 20px;
+	}
+	.button{
+		font-size: 13px;
+		width: 65px;
+    	height: 35px;
+	}
+	.text1{
+		width: 300px;
+		height: 150px;
+	}
+	.text2{
+		width: 300px;
+		height: 150px;
+	}
+}
+
+
+
+
